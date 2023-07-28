@@ -1,0 +1,138 @@
+/* Navegation Bar */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #df5c7e;
+}
+
+.logo {
+    text-decoration: none;
+    max-width: 20rem;
+    color: #fff;
+}
+
+.nav {
+    order: 1;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 10px;
+    font-size: 20px;
+
+    li {
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+
+            &:hover {
+                color: #ecc04f;
+            }
+        }
+    }
+}
+
+.btn {
+    order: 2;
+
+    button {
+        margin-left: 20px;
+        font-weight: 700;
+        color: #1b3039;
+        padding: 9px 25px;
+        background: #eceff1;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            background-color: #e2f1f8;
+            color: #ecc04f;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.cerrar-menu,
+.abrir-menu {
+    display: none;
+}
+
+@media screen and (max-width: 713px) {
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.5rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        color: #fffe;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #df5c7e;
+        padding: 3rem;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.5);
+        transition: 0.3s;
+        z-index: 999;
+
+        &.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+        font-size: 1rem;
+
+        li a {
+            color: #fff;
+
+            &:not(.btn)::after {
+                content: "";
+                position: absolute;
+                background-color: #e2f1f8;
+                height: 3px;
+                width: 0;
+                left: 0;
+                bottom: 0px;
+                transition: 0.4s;
+            }
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        li a:hover::after {
+            width: 100%;
+        }
+    }
+}
