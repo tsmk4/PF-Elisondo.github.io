@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,497 @@
     <link rel="stylesheet" href="../sass/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
+
 <body>
-    
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a class="logo" href="../index.html">
+                <h1>Rojo Pastel</h1>
+            </a>
+        </div>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+                <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./about.html">Sobre Nosotros</a></li>
+                <li><a class="btn" href="./login.html"><button>Iniciar Sesion</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="main">
+            <!--main-content----------------------------->
+            <div class="main-content">
+                <!--text------------>
+                <div class="main-text">
+                    <span>Productos</span>
+                    <h1>Tortas por KG</h1>
+                    <p>Bizcochuelo de vainilla, chocolate o mixto, con dos capas de relleno a eleccion:</p>
+                    <a href="#">Pedir ahora</a>
+                </div>
+                <!--img------------->
+                <div class="main-img">
+                    <img src="../img/Tortas-a-eleccion.jpg" alt="torta">
+                </div>
+            </div>
+        </section>
+        <!--==Categories==============================================-->
+        <section id="categories">
+            <h2>Categorias</h2>
+            <div class="category-container">
+                <!--box------------------------>
+                <a href="#" class="category-box">
+                    <img src="../img/minitortas.jpeg" alt="Mini Bocaditos">
+                    <span>Mini Bocaditos</span>
+                </a>
+                <!--box------------------------>
+                <a href="#" class="category-box">
+                    <img src="../img/Dulce.jpg" alt="Cosas Dulces Para Merendar">
+                    <span>Para Merendar</span>
+                </a>
+                <!--box------------------------>
+                <a href="#" class="category-box">
+                    <img src="../img/Selva-Negra.jpg" alt="Tortas">
+                    <span>Tortas</span>
+                </a>
+                <!--box------------------------>
+                <a href="#" class="category-box">
+                    <img src="../img/salado.jpg" alt="Salado">
+                    <span>Salado</span>
+                </a>
+            </div>
+        </section>
+        <!--==Feature=product===============================================================-->
+        <section id="feature-product">
+            <h1>Productos Destacados</h1>
+            <div class="feature-product-container">
+
+                <!--box-1---------------------->
+                <div class="feature-product-box">
+                    <!--img------------------>
+                    <div class="product-feature-img">
+                        <img src="../img/macarons.jpg" alt="macarons">
+                    </div>
+                    <!--text-contaier--------->
+                    <div class="product-feature-text-container">
+                        <!--text-->
+                        <div class="product-feature-text">
+                            <strong>Macarons x 10</strong>
+                            <span>5400$</span>
+                        </div>
+                        <!--cart-like-->
+                        <div class="cart-like">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <!--box-2---------------------->
+                <div class="feature-product-box">
+                    <!--img------------------>
+                    <div class="product-feature-img">
+                        <img src="../img/brownie.jpg" alt="brownie">
+                    </div>
+                    <!--text-contaier--------->
+                    <div class="product-feature-text-container">
+                        <!--text-->
+                        <div class="product-feature-text">
+                            <strong>Brownie</strong>
+                            <span>2000$</span>
+                        </div>
+                        <!--cart-like-->
+                        <div class="cart-like">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <!--box-3---------------------->
+                <div class="feature-product-box">
+                    <!--img------------------>
+                    <div class="product-feature-img">
+                        <img src="../img/Selva-Negra.jpg" alt="Selva Negra">
+                    </div>
+                    <!--text-contaier--------->
+                    <div class="product-feature-text-container">
+                        <!--text-->
+                        <div class="product-feature-text">
+                            <strong>Selva Negra</strong>
+                            <span>3000$</span>
+                        </div>
+                        <!--cart-like-->
+                        <div class="cart-like">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <!--box-4---------------------->
+                <div class="feature-product-box">
+                    <!--img------------------>
+                    <div class="product-feature-img">
+                        <img src="../img/marquise.jpg" alt="Marquise">
+                    </div>
+                    <!--text-contaier--------->
+                    <div class="product-feature-text-container">
+                        <!--text-->
+                        <div class="product-feature-text">
+                            <strong>Marquise</strong>
+                            <span>3000$</span>
+                        </div>
+                        <!--cart-like-->
+                        <div class="cart-like">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--==banner==============================================================-->
+        <section id="banner">
+            <!--text------>
+            <div class="banner-text">
+                <strong>Alfajores de Maicena x6</strong>
+                <span>Desde 1950$s</span>
+                <p>Tiernos alfajores maicena, sabor único.</p>
+                <a href="#">Pedir Ahora</a>
+            </div>
+            <!--img------->
+            <div class="banner-img">
+                <img src="../img/alfajores.jpg" alt="">
+            </div>
+        </section>
+        <!--==products=============================================================-->
+        <section id="products">
+            <!--heading------------------------------------------------->
+            <div class="product-heading">
+                <h3>Nuestros Productos</h3>
+            </div>
+            <!--product-container--------------------------------------->
+            <div class="feature-product-container">
+
+                <!--box-1---------------------->
+                <div class="feature-product-box">
+
+                    <!--img------------------>
+                    <div class="product-feature-img">
+                        <img src="../img/alfajores.jpg" alt="alfajores de maicena">
+                    </div>
+
+                    <!--text-contaier--------->
+                    <div class="product-feature-text-container">
+                        <!--text-->
+                        <div class="product-feature-text">
+                            <strong>Alfajores de Maicena x6</strong>
+                            <span>1950$</span>
+                        </div>
+                        <!--cart-like-->
+                        <div class="cart-like">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--box-2---------------------->
+                <div class="feature-product-box">
+
+                    <!--img------------------>
+                    <div class="product-feature-img">
+                        <img src="../img/brownie.jpg" alt="brownie">
+                    </div>
+
+                    <!--text-contaier--------->
+                    <div class="product-feature-text-container">
+                        <!--text-->
+                        <div class="product-feature-text">
+                            <strong>Brownie</strong>
+                            <span>2000$</span>
+                        </div>
+                        <!--cart-like-->
+                        <div class="cart-like">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
 
 
 
 
+                <!--box-3---------------------->
+                <div class="feature-product-box">
+
+                    <!--img------------------>
+                    <div class="product-feature-img">
+                        <img src="../img/Dulce.jpg" alt="box dulce">
+                    </div>
+
+                    <!--text-contaier--------->
+                    <div class="product-feature-text-container">
+                        <!--text-->
+                        <div class="product-feature-text">
+                            <strong>Box Dulce</strong>
+                            <span>2500$</span>
+                        </div>
+                        <!--cart-like-->
+                        <div class="cart-like">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!--box-4---------------------->
+                <div class="feature-product-box">
+
+                    <!--img------------------>
+                    <div class="product-feature-img">
+                        <img src="../img/macarons.jpg" alt="macarons">
+                    </div>
+
+                    <!--text-contaier--------->
+                    <div class="product-feature-text-container">
+                        <!--text-->
+                        <div class="product-feature-text">
+                            <strong>Macarons x 10</strong>
+                            <span>5400$</span>
+                        </div>
+                        <!--cart-like-->
+                        <div class="cart-like">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--box-5---------------------->
+                <div class="feature-product-box">
+
+                    <!--img------------------>
+                    <div class="product-feature-img">
+                        <img src="../img/marquise.jpg" alt="marquise">
+                    </div>
+
+                    <!--text-contaier--------->
+                    <div class="product-feature-text-container">
+                        <!--text-->
+                        <div class="product-feature-text">
+                            <strong>Marquise</strong>
+                            <span>3000$</span>
+                        </div>
+                        <!--cart-like-->
+                        <div class="cart-like">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--box-6---------------------->
+                <div class="feature-product-box">
+
+                    <!--img------------------>
+                    <div class="product-feature-img">
+                        <img src="../img/salado.jpg" alt="pizzetas">
+                    </div>
+
+                    <!--text-contaier--------->
+                    <div class="product-feature-text-container">
+                        <!--text-->
+                        <div class="product-feature-text">
+                            <strong>Pizzetas x6</strong>
+                            <span>2400$</span>
+                        </div>
+                        <!--cart-like-->
+                        <div class="cart-like">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--box-7---------------------->
+                <div class="feature-product-box">
+
+                    <!--img------------------>
+                    <div class="product-feature-img">
+                        <img src="../img/Selva-Negra.jpg" alt="Selva-Negra">
+                    </div>
+
+                    <!--text-contaier--------->
+                    <div class="product-feature-text-container">
+                        <!--text-->
+                        <div class="product-feature-text">
+                            <strong>Selva Negra</strong>
+                            <span>3000$</span>
+                        </div>
+                        <!--cart-like-->
+                        <div class="cart-like">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--box-8---------------------->
+                <div class="feature-product-box">
+
+                    <!--img------------------>
+                    <div class="product-feature-img">
+                        <img src="../img/Tortas-a-eleccion.jpg" alt="torta a eleccion">
+                    </div>
+
+                    <!--text-contaier--------->
+                    <div class="product-feature-text-container">
+                        <!--text-->
+                        <div class="product-feature-text">
+                            <strong>Torta x KG</strong>
+                            <span>3000$</span>
+                        </div>
+                        <!--cart-like-->
+                        <div class="cart-like">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!--==banner==============================================================-->
+        <section id="banner" class="banner-reverse">
+            <!--text------>
+            <div class="banner-text">
+                <strong>Box Dia Del Niño</strong>
+                <span>Desde $2400</span>
+                <p>Explora nuestra caja de alegría para los más pequeños en su día.</p>
+                <a href="#">Pedir Ahora</a>
+            </div>
+            <!--img------->
+            <div class="banner-img">
+                <img src="../img/dia-niño.jpeg" alt="">
+            </div>
+        </section>
+        <!--==Latest-News=========================================================-->
+        <section id="news">
+            <!--heading-------->
+            <div class="news-heading">
+                <h3>Ultimos Productos</h3>
+            </div>
+            <!--container------>
+            <div class="news-box-container">
+
+                <!--box------>
+                <div class="news-box">
+                    <!--img--->
+                    <div class="news-img">
+                        
+                        <!--label-->
+                        <div class="news-label">
+                            proximamente
+                        </div>
+                    </div>
+                    <!--text-->
+                    <div class="news-text">
+                        <strong>proximamente</strong>
+                        <span>proximamente</span>
+                        <a href="#">proximamente</a>
+                    </div>
+                </div>
+                <!--box------>
+                <div class="news-box">
+                    <!--img--->
+                    <div class="news-img">
+                        
+                        <!--label-->
+                        <div class="news-label">
+                            proximamente
+                        </div>
+                    </div>
+                    <!--text-->
+                    <div class="news-text">
+                        <strong>proximamente</strong>
+                        <span>proximamente</span>
+                        <a href="#">proximamente</a>
+                    </div>
+                </div>
+                <!--box------>
+                <div class="news-box">
+                    <!--img--->
+                    <div class="news-img">
+<!--                         <img src="images/news-3.png" alt="news"> -->
+                        <!--label-->
+                        <div class="news-label">
+                            proximamente
+                        </div>
+                    </div>
+                    <!--text-->
+                    <div class="news-text">
+                        <strong>proximamente</strong>
+                        <span>proximamente</span>
+                        <a href="#">proximamente</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="../js/script.js"></script>
+    </main>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave3"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="#"></a><ion-icon name="logo-twitter"></ion-icon></li>
+            <li><a href="#"></a><ion-icon name="logo-facebook"></ion-icon></li>
+            <li><a href="#"></a><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+            <li><a href="#"></a><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./pages/productos.html">Productos</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+            <li><a href="./pages/about.html">Sobre Nosotros</a></li>
+            <li><a href="./pages/login.html">Logeo</a></li>
+        </ul>
+        <p>Rojo Pastel</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
